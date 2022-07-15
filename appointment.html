@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appointment</title>
+    <link rel="stylesheet" href="appointment.css" />
+    <link rel="stylesheet" href="assets/css/icofont.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <a href="index.html"
+              ><h2>Medic<span>lab</span></h2></a
+            >
+          </div>
+          <div class="nav-aside">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <div class="dropdown">
+                <li><a href="#">About us <span><img class="caret-down-svg" src="svg/chevron-down.svg" alt=""></span></a>  </li>
+                <div class="dropdown-content">
+                    <a href="#">Executive team</a>
+                    <a href="#">Our Doctors</a>
+                    <a href="#">Our Mission</a>
+                </div>
+              </div>
+              <li><a href="">Services</a></li>
+              <li><a href="" class="active-link">Appointments</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-section">
+          <h1>Book Your Appointment</h1>
+        </div>
+      </div>
+    </header>
+    <section class="container appointment-group">
+      <div class="appointment-form-section">
+        <div class="appointment-form-container">
+          <h1>How To Book an appointment</h1>
+          <p>
+            Please complete the form below to book an appoitment at Mediclab.
+            After you submit the form a representative will contact you within
+            5-7 hours to review your medical information before an appointment
+            may be offered. <br />
+            Please note: this form cannot be used for medical emergency or
+            scheduling same-day appointment. If you plan to visit us within
+            24hours or have a medical emergency, please call +234XXXXXXX or
+            +234XXXXXXX
+          </p>
+          <form class="appointment-form">
+            <div class="form-group">
+              <div class="name-field">
+                <label for="name-input">Name</label> <br />
+                <input
+                  type="text"
+                  id="name-input"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+              <div class="email-field">
+                <label for="email-input">Email</label> <br />
+                <input
+                  type="text"
+                  id="email-input"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+            </div>
+            <div class="secondary-form-group">
+              <div class="phone-field">
+                <label for="phone-input">Phone</label> <br />
+                <input
+                  type="number"
+                  id="number-input"
+                  placeholder="Enter Your Number"
+                />
+              </div>
+              <div class="age-field">
+                <label for="age-input">Age</label> <br />
+                <input
+                  type="number"
+                  id="age-input"
+                  placeholder="Enter Your Age"
+                />
+              </div>
+            </div>
+            <div class="message-form-group">
+              <label for="message">Message</label> <br />
+              <textarea
+                name=""
+                id="message"
+                placeholder="Write your message here..."
+              ></textarea>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit" class="submit-btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="schedule">
+        <div class="work-schedule">
+          <h1>Working Hours</h1>
+          <div class="working-hour">
+            <p>Monday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Tuesday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Wednesday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Thursday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Friday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Saturday</p>
+            <p>24hours</p>
+          </div>
+          <div class="working-hour">
+            <p>Sunday</p>
+            <p>24hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section container">
+        <div class="newsletter-text"> 
+            <h1>Subscribe to our Newsletter</h1>
+        </div>
+        <form class="newsletter-form"> 
+            <input type="email" class="newsletter-email-field" placeholder="Enter your Email"> 
+            <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+    </section>
+    <footer class="footer ">
+        <div class="footer-copyright">
+          <div class="footer-end container">
+            <p>Mediclab</p>
+            <div class="footer-end-middle">
+              <a href="contact.html" class="footer-contact-link">Contact</a>
+            </div>
+            <div class="footer-social">
+              <a href="">
+                <img src="svg/linkedin.svg" alt="">
+              </a>
+              <a href="">
+                <img src="svg/youtube.svg" alt="">
+              </a>
+              <a href="">
+                <img src="svg/facebook.svg" alt="">
+               
+              </a>
+              <a href="">
+                <img src="svg/instagram.svg" alt="">
+              </a>
+            </div>
+            <div class="copyright"> <p><span>&copy</span>2022</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

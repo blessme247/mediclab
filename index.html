@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mediclab</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300&family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body class="body">
+    <header>
+      <div class="container">
+        <nav> 
+          <div class="logo-wrapper">
+            <a class="logo" href="index.html"> 
+            <h2>Medic<span>lab</span></h2></a>
+          <button class="mobile-nav-toggle" aria-controls="navigation" aria-expanded="false">
+              <span class="sr-only"></span>
+            </button>
+          </div>
+          <div class="nav-aside">
+            <ul data-visible="false" id="navigation" class="navigation">
+              <li><a href="index.html" class="active-link">Home</a></li>
+              <div class="dropdown">
+                <li><a  href="#">About us <span><img class="caret-down-svg" src="svg/chevron-down.svg" alt=""></span></a>  </li>
+                <div class="dropdown-content">
+                    <a href="#">Executive team</a>
+                    <a href="#">Our Doctors</a>
+                    <a href="#">Our Mission</a>
+                </div>
+              </div>
+              <li><a href="">Services</a></li>
+              <li><a href="appointment.html">Appointments</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="hero-section">
+          <h2>We Provide</h2>
+          <h1>Full Medical Care!</h1>
+          <p>Highest standard of customer service</p>
+          <button class="know-more">Know More</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="features container">
+          <div class="features-section">
+            <div class="feature">
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="80" height="80" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_23"
+                      transform="scale(0.0078125)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_23"
+                    width="128"
+                    height="128"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <h2>24 Hour Emergency</h2>
+              <p>Open round the clock for convenience, quick and easy access</p>
+            </div>
+            <div class="feature">
+              <img src="svg/icons8_lab_items_240px_1 1.svg" alt="" />
+              <h2>Complete Lab Service</h2>
+              <p>
+                Cost-efficient, comprehensive and clinical laboratory services
+              </p>
+            </div>
+            <div class="feature">
+              <img src="svg/icons8_Medical_Doctor_200px 1.svg" alt="" />
+              <h2>Medical Professionals</h2>
+              <p>Qualified and certified physicians for quality medical care</p>
+            </div>
+          </div>
+        
+      </section>
+      <section class="departments">
+        <div class="container">
+          <div class="departments-section">
+            <div class="section-head">
+              <h2>Our Departments</h2>
+              <br />
+              <p>
+                The hospital specialises in various services for the convenience
+                of all the patients
+              </p>
+            </div>
+            <div class="sub-department">
+              <div class="department">
+                <img
+                  class="brain-svg"
+                  src="svg/icons8_brain_200px 1.svg"
+                  alt=""
+                />
+
+                <p>Psychiatry</p>
+              </div>
+              <div class="department">
+                <img src="svg/icons8_test_tube_240px 1.svg" alt="" />
+
+                <p>Laboratory</p>
+              </div>
+              <div class="department">
+                <img src="svg/icons8_tooth_100px_1 1.svg" alt="" />
+                <p>Dentistry</p>
+              </div>
+              <div class="department">
+                <img src="svg/icons8_heart_with_pulse_100px_1 1.svg" alt="" />
+                <p>Cardiology</p>
+              </div>
+            </div>
+            <div class="sub-department sub-department_secondary">
+              <div class="department">
+                <img src="svg/icons8_vagina_100px_1 1.svg" alt="" />
+
+                <p>Gynecology</p>
+              </div>
+              <div class="department">
+                <img src="svg/icons8_caduceus_100px_1 1.svg" alt="" />
+
+                <p>Medicine</p>
+              </div>
+              <div class="department">
+                <img src="svg/icons8_Car_Accident_100px_1 1.svg" alt="" />
+
+                <p>Emergency</p>
+              </div>
+              <div class="department">
+                <img
+                  src="svg/icons8_Child_with_Pacifier_200px_1 1.svg"
+                  alt=""
+                />
+                <p>Pediatrics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services container">
+          <div class="services-section">
+            <div class="section-head">
+              <h2>Our Services</h2>
+            </div>
+            <div class="main-services">
+              <div class="service">
+                <img src="svg/icons8_nurse_240px_1 1.svg" alt="" />
+                <h3>Prima Care Physicia</h3>
+                <p>This center provides the following health care services</p>
+                <ul>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> Complete Family Health Care
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> </svg
+                    >EKG
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> </svg
+                    >X-ray
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> </svg
+                    >Ultrasound
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> </svg
+                    >Acute and Chronic Care
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> Well woman's Exam
+                  </li>
+                </ul>
+              </div>
+              <div class="service">
+                <img src="svg/icons8_vegan_food_128px 1.svg" alt="" />
+                
+                <h3>Holistic Wellness</h3> 
+                <p>You should feel your best no matter the season</p>
+                <ul>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> Weight loss
+                  </li>
+                  <li>
+                    <span><img src="svg/check.svg" alt="" /></span> Thereaupatic
+                    medical massage
+                  </li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Holistic skin care</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> K-laser pain management</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Detoxification</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Hormone replacement therapy</li>
+                </ul>
+              </div>
+              <div class="service">
+                <svg
+                width="80"
+                height="80"
+                viewBox="0 0 80 80"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="80" height="80" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_1_23"
+                      transform="scale(0.0078125)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_1_23"
+                    width="128"
+                    height="128"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+                <br />
+                <h3>Allergy and Immunology</h3>
+                <p>This center provides the following health care services</p>
+                <ul>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Allergy and Immunology</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Testing for Immunology</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Allergy treatment</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Asthma care</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Dematology</li>
+                  <li> <span><img src="svg/check.svg" alt="" /></span> Pediatric allergy</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+       
+      </section>
+      <section class="questions">
+          <div class="container">
+              <div class="questions-section">
+                  <div class="section-head">
+                     <h2>Frequently Asked Questions</h2>
+                  </div>
+                  <div class="questions-column">
+                      <div class="left-column">
+                          <div class="faq">
+                              <div class="question">
+                                  <p>How do I make an appointment </p>
+                                  <button class="answer-button" onClick="showToggle(this)" >
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0052ff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                  </svg>
+                                </button>
+                              </div>
+                              <div class="answer">
+                                  <p>If you would like to make an appointment with any of our practitioners please contact our reception staff.
+                                      Alternatively you can book an appointment online. Every effort will be made to accomodate your preferred time and 
+                                      choice of practitioner.
+                                  </p>
+                              </div>
+                          </div>
+                          <div class="faq">
+                            <div class="question">
+                                <p>How do i get a copy of my record </p>
+                                <button class="answer-button" onClick="showToggle(this)" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0052ff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg></button>
+                            </div>
+                            <div class="answer">
+                                <p>If you would like to get a copy of your record,schedule an appointment with any of our practitionrs please contact our reception staff.
+                                Every effort will be made to ensure that you get your record as soon as possible.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="question">
+                                <p>Is there a charge for extra copies </p>
+                                <button class="answer-button" onClick="showToggle(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0052ff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg></button>
+                            </div>
+                            <div class="answer">
+                                <p>There's no charge for extra copies on the first collection. Subsequent extra copies that would be 
+                                    collected will attract a $50 processing fee.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq">
+                            <div class="question">
+                                <p>How do I know the right practitioner </p>
+                                <button class="answer-button" onClick="showToggle(this)"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0052ff" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                  <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                </svg></button>
+                            </div>
+                            <div class="answer">
+                                <p>At Mediclab, our culture is to promote efficient and effective delivery of medical 
+                                    services and we have the right medical personnel to take care of that.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="ask-button">Ask Questions</button>
+                      </div>
+                      <div class="right-column">
+                          <img src="images/humberto-chavez-FVh_yqLR9eA-unsplash 1.jpg" alt="">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="specialists container">
+          <div class="specialists-section">
+            <div class="section-head">
+              <h2>Our Specialists</h2>
+           </div>
+           <div class="specialists-profile">
+             <div class="profile">
+              <img src="images/Rectangle20.jpg" alt="">
+              <h4>Dr. Kylian Mbappe</h4>
+              <p class="title">Cardiotherapist</p>
+              <div class="work-schedule"> 
+                <div class="schedule">
+                  <p>Mon-Thur</p>
+                  <p>08:00 - 20:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Friday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Saturday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+            </div>
+            </div>
+             <div class="profile">
+              <img src="images/Rectangle22.jpg" alt="">
+              <h4>Dr. Samantha Kerr</h4>
+              <p class="title">Gynecologist</p>
+              <div class="work-schedule"> 
+                <div class="schedule">
+                  <p>Mon-Thur</p>
+                  <p>08:00 - 20:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Friday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Saturday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+            </div>
+             </div>
+             <div class="profile">
+              <img src="images/female-nurse.jpg" alt="">
+              <h4>Dr. Erin Cuthbert</h4>
+              <p class="title">Psychiatrist</p>
+              <div class="work-schedule"> 
+                <div class="schedule">
+                  <p>Mon-Thur</p>
+                  <p>08:00 - 20:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Friday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+                <div class="schedule">
+                  <p>Saturday</p>
+                  <p>08:00 - 15:00 </p>
+                </div>
+            </div>
+             </div>
+           </div>
+          </div>
+      </section>
+      <section class="testimonial">
+        <div class="section-head">
+          Testiomial
+        </div>
+        <div class="comments">
+          <div id="left-comment">
+            <div class="image"><img src="images/smiling-woman.jpg" alt=""></div>
+            <p class="comment">"A friend of mine referred me to mediclab after battling with low money count 
+              for several years
+              and since I registered at their healthTech center, my money count has increased sporadically."</p>
+              <p class="ratings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </p>
+              <p class="client-name">Cardi Lexus</p>   
+          </div>
+          <div id="middle-comment">
+            <div class="image"><img src="images/smiling-guy.jpg" alt=""></div>
+            <p class="comment">"A friend of mine referred me to mediclab after battling with low money count for several years
+              and since I registered at their healthTech center, my money count has increased sporadically."</p>
+              <p class="ratings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </p>
+              <p class="client-name">Chris Bugatti</p>
+          </div>
+          <div id="right-comment">
+            <div class="image"><img src="images/ashkan-forouzani-DPEPYPBZpB8-unsplash.jpg" alt=""></div>
+            <p class="comment">"A friend of mine referred me to mediclab after battling with low money count for several years
+              and since I registered at their healthTech center, my money count has increased sporadically."</p>
+              <p class="ratings">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-star-fill" viewBox="0 0 16 16">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+              </p>
+              <p class="client-name">Jim Beglin</p>
+          </div>
+         </div>
+         <div class="arrows">
+          <a href="#left-comment">
+            <p >1</p>
+          </a>
+          <a  href="#middle-comment">
+            <p>2</p>
+          </a>
+          <a href="#right-comment">
+          <p>3</p>
+          </a>
+        </div>
+      </section>
+      <!-- <section class="call-to-action container">
+          <div class="cta-image">
+            <img src="svg/austin-distel-7bMdiIqz_J4-unsplash 1.svg" alt="">
+          </div>
+          <div class="cta-form">
+            <form action="" class="form">
+                <div class="form-group">
+                  <label for="fullname">Fullname</label>
+                  <input type="text" class="name-field" id="fullname" placeholder="John Doe">
+                </div>
+                <div class="form-group email-form-group">
+                  <label for="email">Email</label>
+                  <input type="text" class="name-field" id="email" placeholder="John Doe">
+                </div>
+                <div class="form-group message-form-group">
+                  <label for="message">Message</label>
+                  <textarea name="" id="message" cols="50" rows="20"></textarea>
+                </div>
+            </form>
+
+          </div>
+      </section> -->
+    <section class="records container">
+      <div class="hospital-records">
+        <div class="record">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="#0052ff" viewBox="0 0 576 512"> <path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.6 483.2 483.9 512 448.5 512H128.1C92.75 512 64.09 483.3 64.09 448V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5H575.8zM328 232V176C328 167.2 320.8 160 312 160H264C255.2 160 248 167.2 248 176V232H192C183.2 232 176 239.2 176 248V296C176 304.8 183.2 312 192 312H248V368C248 376.8 255.2 384 264 384H312C320.8 384 328 376.8 328 368V312H384C392.8 312 400 304.8 400 296V248C400 239.2 392.8 232 384 232H328z"/></svg>
+          <p class="counter">350 <span>+</span></p>
+          <p>Clinical rooms</p>
+        </div>
+        <div class="record">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="#0052ff" viewBox="0 0 640 512">  <path d="M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z"/></svg>
+          <p class="counter">2500 +</p>
+          <p>Happy Patients</p>
+        </div>
+        <div class="record">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="#0052ff" viewBox="0 0 448 512"> <path d="M352 128C352 198.7 294.7 256 223.1 256C153.3 256 95.1 198.7 95.1 128C95.1 57.31 153.3 0 223.1 0C294.7 0 352 57.31 352 128zM287.1 362C260.4 369.1 239.1 394.2 239.1 424V448C239.1 452.2 241.7 456.3 244.7 459.3L260.7 475.3C266.9 481.6 277.1 481.6 283.3 475.3C289.6 469.1 289.6 458.9 283.3 452.7L271.1 441.4V424C271.1 406.3 286.3 392 303.1 392C321.7 392 336 406.3 336 424V441.4L324.7 452.7C318.4 458.9 318.4 469.1 324.7 475.3C330.9 481.6 341.1 481.6 347.3 475.3L363.3 459.3C366.3 456.3 368 452.2 368 448V424C368 394.2 347.6 369.1 320 362V308.8C393.5 326.7 448 392.1 448 472V480C448 497.7 433.7 512 416 512H32C14.33 512 0 497.7 0 480V472C0 393 54.53 326.7 128 308.8V370.3C104.9 377.2 88 398.6 88 424C88 454.9 113.1 480 144 480C174.9 480 200 454.9 200 424C200 398.6 183.1 377.2 160 370.3V304.2C162.7 304.1 165.3 304 168 304H280C282.7 304 285.3 304.1 288 304.2L287.1 362zM167.1 424C167.1 437.3 157.3 448 143.1 448C130.7 448 119.1 437.3 119.1 424C119.1 410.7 130.7 400 143.1 400C157.3 400 167.1 410.7 167.1 424z"/></svg>
+          <p class="counter">250 +</p>
+          <p>Medical Experts</p>
+        </div>
+        <div class="record">
+          <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="#0052ff" viewBox="0 0 384 512"> <path d="M288 358.3c13.98-8.088 17.53-30.04 28.88-41.39c11.35-11.35 33.3-14.88 41.39-28.87c7.98-13.79 .1658-34.54 4.373-50.29C366.7 222.5 383.1 208.5 383.1 192c0-16.5-17.27-30.52-21.34-45.73c-4.207-15.75 3.612-36.5-4.365-50.29c-8.086-13.98-30.03-17.52-41.38-28.87c-11.35-11.35-14.89-33.3-28.87-41.39c-13.79-7.979-34.54-.1637-50.29-4.375C222.5 17.27 208.5 0 192 0C175.5 0 161.5 17.27 146.3 21.34C130.5 25.54 109.8 17.73 95.98 25.7C82 33.79 78.46 55.74 67.11 67.08C55.77 78.43 33.81 81.97 25.72 95.95C17.74 109.7 25.56 130.5 21.35 146.2C17.27 161.5 .0008 175.5 .0008 192c0 16.5 17.27 30.52 21.34 45.73c4.207 15.75-3.615 36.5 4.361 50.29C33.8 302 55.74 305.5 67.08 316.9c11.35 11.35 14.89 33.3 28.88 41.4c13.79 7.979 34.53 .1582 50.28 4.369C161.5 366.7 175.5 384 192 384c16.5 0 30.52-17.27 45.74-21.34C253.5 358.5 274.2 366.3 288 358.3zM112 192c0-44.27 35.81-80 80-80s80 35.73 80 80c0 44.17-35.81 80-80 80S112 236.2 112 192zM1.719 433.2c-3.25 8.188-1.781 17.48 3.875 24.25c5.656 6.75 14.53 9.898 23.12 8.148l45.19-9.035l21.43 42.27C99.46 507 107.6 512 116.7 512c.3438 0 .6641-.0117 1.008-.0273c9.5-.375 17.65-6.082 21.24-14.88l33.58-82.08c-53.71-4.639-102-28.12-138.2-63.95L1.719 433.2zM349.6 351.1c-36.15 35.83-84.45 59.31-138.2 63.95l33.58 82.08c3.594 8.797 11.74 14.5 21.24 14.88C266.6 511.1 266.1 512 267.3 512c9.094 0 17.23-4.973 21.35-13.14l21.43-42.28l45.19 9.035c8.594 1.75 17.47-1.398 23.12-8.148c5.656-6.766 7.125-16.06 3.875-24.25L349.6 351.1z"/></svg>
+          <p class="counter">10 +</p>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter-section container">
+      <div class="newsletter-text"> 
+          <h1>Subscribe to our Newsletter</h1>
+      </div>
+      <form class="newsletter-form"> 
+          <input type="email" class="newsletter-email-field" placeholder="Enter your Email"> 
+          <button type="submit" class="subscribe-button">Subscribe</button>
+      </form>
+  </section>
+    </main>
+    <footer class="footer ">
+        <div class="footer-copyright">
+          <div class="footer-end container">
+            <p>Mediclab</p>
+            <div class="footer-end-middle">
+              <a href="contact.html" class="footer-contact-link">Contact</a>
+            </div>
+            <div class="footer-social">
+              <a href="">
+                <img src="svg/linkedin.svg" alt="">
+              </a>
+              <a href="">
+                <img src="svg/youtube.svg" alt="">
+              </a>
+              <a href="">
+                <img src="svg/facebook.svg" alt="">
+               
+              </a>
+              <a href="">
+                <img src="svg/instagram.svg" alt="">
+              </a>
+            </div>
+            <div class="copyright"> <p><span>&copy</span>2022</p></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
